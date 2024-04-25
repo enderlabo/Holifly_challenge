@@ -9,6 +9,13 @@ import SwiftUI
 
 struct PokemonViewCell: View {
     let pokemonData: PokemonModel
+    @ObservedObject var viewModel = PokemonViewModel()
+    @State private var typeName: String = Constants.emptyString
+    
+    init(pokemonData: PokemonModel, viewModel: PokemonViewModel) {
+        self.pokemonData = pokemonData
+        self.viewModel = viewModel
+    }
     
     var body: some View {
         
@@ -17,13 +24,12 @@ struct PokemonViewCell: View {
                 HStack {
                     Text(pokemonData.name.capitalized)
                     Spacer()
-                    Text("#001")
+                    Text(Constants.identifier + String(pokemonData.id))
                 }
                 .font(.subheadline)
                 .fontWeight(.bold)
                 .foregroundStyle(.white)
                 .padding([.top, .leading, .trailing], 15)
-                
                 .frame(maxWidth: .infinity)
                 
                 HStack() {
@@ -40,29 +46,38 @@ struct PokemonViewCell: View {
                                         .fill(Color.black)
                                         .opacity(0.15)
                                 )
+                                .onAppear{
+                                    self.typeName = type.type.name
+                                    
+                                }
                         }
                     }
                     
                     Spacer()
                     PokemonImage(url: pokemonData.sprites.front_default)
+                        .scaledToFit()
+//                    KFImage(url: pokemonData.sprites.front_default)
+//                        .resizable()
+//                        .scaledToFit()
                         .padding(.bottom, 4)
                         .padding(.trailing, 4)
-                        .frame(width: 60, height: 60)
+                        .frame(width: Constants.spacing60, height: Constants.spacing60)
                         .background(
-                            Image("pokeball")
+                            Image(Constants.pokeballImg)
                                 .resizable()
                                 .scaledToFill()
                                 .frame(width: 120)
                                 .padding(.top, 50)
                                 .padding(.leading, 20)
                         )
+                    
                 }
                 .padding()
                 
             }
         }
-        .background(.green)
-        .cornerRadius(20)
+        .background(Color(viewModel.backgroundColor(forType: typeName)))
+        .cornerRadius(Constants.spacing20)
         .shadow(color: .gray, radius: 5)
     }
 }

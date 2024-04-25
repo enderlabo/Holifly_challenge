@@ -61,10 +61,21 @@ struct Move: Identifiable, Codable, Hashable {
 struct Species: Codable, Hashable {
     var name: String
     var url: URL
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(name)
+        hasher.combine(url)
+        // Combine other properties that are used for equality checks
+        }
 }
 
 struct Sprites: Codable, Hashable {
     var front_default: URL
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(front_default)
+        // Combine other properties that are used for equality checks
+        }
 }
 
 struct Types: Identifiable, Codable, Hashable {
@@ -79,6 +90,12 @@ struct Types: Identifiable, Codable, Hashable {
         var name: String
         var url: URL
     }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+        hasher.combine(type)
+        // Combine other properties that are used for equality checks
+        }
 }
 
 struct Abilities:  Identifiable, Codable, Hashable {

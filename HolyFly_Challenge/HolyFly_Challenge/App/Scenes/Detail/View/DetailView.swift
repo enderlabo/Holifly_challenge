@@ -16,6 +16,11 @@ struct DetailView: View {
             PokemonImage(url: detailData.sprites.front_default)
                 .frame(width: 200, height: 200)
                 .frame(maxWidth: .infinity, alignment: .center)
+            Section("Type \(detailData.types.count)") {
+                ForEach(detailData.types) { type in
+                    Text(type.type.name)
+                }
+            }
             Section("Abilities \(detailData.abilities.count)") {
                 ForEach(detailData.abilities) { abilities in
                     Text(abilities.ability.name)

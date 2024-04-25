@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PokemonView: View {
     @EnvironmentObject private var viewModel: PokemonViewModel
-    @State private var searchField: String = ""
+    @State private var searchField: String = Constants.emptyString
     private let colums = [GridItem(.flexible()), GridItem(.flexible())]
     
     var filteredPokemonList: [PokemonModel] {
@@ -24,12 +24,12 @@ struct PokemonView: View {
         NavigationView {
             GeometryReader { geometry in
                 ScrollView {
-                    LazyVGrid(columns: colums, spacing: 15) {
+                    LazyVGrid(columns: colums, spacing: Constants.spacing15) {
                         ForEach(filteredPokemonList,  id: \.self) { item in
                             NavigationLink{
                                 DetailView(detailData: item)
                             } label: {
-                                PokemonViewCell(pokemonData: item)
+                                PokemonViewCell(pokemonData: item, viewModel: viewModel)
                             }.task {
                                 if item == viewModel.pokemonList.last {
                                     await viewModel.loadPokemons()
@@ -39,8 +39,8 @@ struct PokemonView: View {
                         }
                         
                     }
-                    .searchable(text: $searchField, placement: .toolbar, prompt: "Search a Pokémon")
-                    .navigationTitle("Pokédex")
+                    .navigationTitle(Constants.navigationTitle)
+                    .searchable(text: $searchField, placement: .toolbar, prompt: Constants.searchFieldPrompt)
                     .task {
                         await viewModel.loadPokemons(firstCall: true)
                     }
@@ -55,6 +55,7 @@ struct PokemonView: View {
             }
             
         }
+        
     }
     
     struct PokemonView_Previews: PreviewProvider {

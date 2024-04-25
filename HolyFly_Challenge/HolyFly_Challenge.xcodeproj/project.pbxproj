@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD4873602BD9D04D00A9955E /* PokemonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD48735F2BD9D04D00A9955E /* PokemonViewModel.swift */; };
+		CD4873622BD9DF8D00A9955E /* PokemonImgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4873612BD9DF8D00A9955E /* PokemonImgView.swift */; };
+		CD888DD62BDA3596002AC44B /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD888DD52BDA3596002AC44B /* FileManager.swift */; };
+		CD888DD82BDA3A57002AC44B /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD888DD72BDA3A57002AC44B /* NetworkServiceTests.swift */; };
+		CD888DDA2BDAEC46002AC44B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD888DD92BDAEC46002AC44B /* Constants.swift */; };
+		CD888DDF2BDAEFC4002AC44B /* SubTitleViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD888DDE2BDAEFC4002AC44B /* SubTitleViewComponent.swift */; };
 		CDBFFB032BD597AF007B3F82 /* HolyFly_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFFB022BD597AF007B3F82 /* HolyFly_ChallengeApp.swift */; };
-		CDBFFB052BD597AF007B3F82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFFB042BD597AF007B3F82 /* ContentView.swift */; };
 		CDBFFB072BD597B0007B3F82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDBFFB062BD597B0007B3F82 /* Assets.xcassets */; };
 		CDBFFB0A2BD597B0007B3F82 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDBFFB092BD597B0007B3F82 /* Preview Assets.xcassets */; };
 		CDBFFB0C2BD597B0007B3F82 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFFB0B2BD597B0007B3F82 /* Persistence.swift */; };
@@ -18,6 +23,9 @@
 		CDBFFB252BD597B0007B3F82 /* HolyFly_ChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFFB242BD597B0007B3F82 /* HolyFly_ChallengeUITestsLaunchTests.swift */; };
 		CDBFFB3B2BD62F40007B3F82 /* PokemonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFFB3A2BD62F40007B3F82 /* PokemonView.swift */; };
 		CDBFFB3D2BD62F48007B3F82 /* PokemonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFFB3C2BD62F48007B3F82 /* PokemonViewCell.swift */; };
+		CDBFFB432BD6D5D2007B3F82 /* PokemonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFFB422BD6D5D2007B3F82 /* PokemonModel.swift */; };
+		CDBFFB552BD6EA3B007B3F82 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFFB542BD6EA3B007B3F82 /* NetworkService.swift */; };
+		CDD01D9B2BDA177D001794F7 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD01D9A2BDA177D001794F7 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,20 +46,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CDBFFAFF2BD597AF007B3F82 /* HolyFly_Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HolyFly_Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD48735F2BD9D04D00A9955E /* PokemonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewModel.swift; sourceTree = "<group>"; };
+		CD4873612BD9DF8D00A9955E /* PokemonImgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonImgView.swift; sourceTree = "<group>"; };
+		CD888DD52BDA3596002AC44B /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		CD888DD72BDA3A57002AC44B /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		CD888DD92BDAEC46002AC44B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CD888DDE2BDAEFC4002AC44B /* SubTitleViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleViewComponent.swift; sourceTree = "<group>"; };
+		CDBFFAFF2BD597AF007B3F82 /* HolyFly_Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = HolyFly_Challenge.app; path = "/Users/laborit/Developer/Holifly_challenge/HolyFly_Challenge/build/Debug-iphoneos/HolyFly_Challenge.app"; sourceTree = "<absolute>"; };
 		CDBFFB022BD597AF007B3F82 /* HolyFly_ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolyFly_ChallengeApp.swift; sourceTree = "<group>"; };
-		CDBFFB042BD597AF007B3F82 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CDBFFB062BD597B0007B3F82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDBFFB092BD597B0007B3F82 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CDBFFB0B2BD597B0007B3F82 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		CDBFFB0E2BD597B0007B3F82 /* HolyFly_Challenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HolyFly_Challenge.xcdatamodel; sourceTree = "<group>"; };
-		CDBFFB142BD597B0007B3F82 /* HolyFly_ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HolyFly_ChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDBFFB142BD597B0007B3F82 /* HolyFly_ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = HolyFly_ChallengeTests.xctest; path = "/Users/laborit/Developer/Holifly_challenge/HolyFly_Challenge/build/Debug-iphoneos/HolyFly_Challenge.app/PlugIns/HolyFly_ChallengeTests.xctest"; sourceTree = "<absolute>"; };
 		CDBFFB182BD597B0007B3F82 /* HolyFly_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolyFly_ChallengeTests.swift; sourceTree = "<group>"; };
-		CDBFFB1E2BD597B0007B3F82 /* HolyFly_ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HolyFly_ChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDBFFB1E2BD597B0007B3F82 /* HolyFly_ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = HolyFly_ChallengeUITests.xctest; path = "/Users/laborit/Developer/Holifly_challenge/HolyFly_Challenge/build/Debug-iphoneos/HolyFly_ChallengeUITests-Runner.app/PlugIns/HolyFly_ChallengeUITests.xctest"; sourceTree = "<absolute>"; };
 		CDBFFB222BD597B0007B3F82 /* HolyFly_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolyFly_ChallengeUITests.swift; sourceTree = "<group>"; };
 		CDBFFB242BD597B0007B3F82 /* HolyFly_ChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolyFly_ChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CDBFFB3A2BD62F40007B3F82 /* PokemonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonView.swift; sourceTree = "<group>"; };
 		CDBFFB3C2BD62F48007B3F82 /* PokemonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewCell.swift; sourceTree = "<group>"; };
+		CDBFFB422BD6D5D2007B3F82 /* PokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModel.swift; sourceTree = "<group>"; };
+		CDBFFB542BD6EA3B007B3F82 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		CDD01D9A2BDA177D001794F7 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,35 +95,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD888DD42BDA357D002AC44B /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				CD888DD52BDA3596002AC44B /* FileManager.swift */,
+				CDBFFB0B2BD597B0007B3F82 /* Persistence.swift */,
+				CDBFFB0D2BD597B0007B3F82 /* HolyFly_Challenge.xcdatamodeld */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		CD888DDB2BDAEF85002AC44B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CD888DDE2BDAEFC4002AC44B /* SubTitleViewComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		CDBFFAF62BD597AF007B3F82 = {
 			isa = PBXGroup;
 			children = (
 				CDBFFB012BD597AF007B3F82 /* HolyFly_Challenge */,
 				CDBFFB172BD597B0007B3F82 /* HolyFly_ChallengeTests */,
 				CDBFFB212BD597B0007B3F82 /* HolyFly_ChallengeUITests */,
-				CDBFFB002BD597AF007B3F82 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		CDBFFB002BD597AF007B3F82 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CDBFFAFF2BD597AF007B3F82 /* HolyFly_Challenge.app */,
-				CDBFFB142BD597B0007B3F82 /* HolyFly_ChallengeTests.xctest */,
-				CDBFFB1E2BD597B0007B3F82 /* HolyFly_ChallengeUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		CDBFFB012BD597AF007B3F82 /* HolyFly_Challenge */ = {
 			isa = PBXGroup;
 			children = (
 				CDBFFB312BD5E8C2007B3F82 /* App */,
-				CDBFFB022BD597AF007B3F82 /* HolyFly_ChallengeApp.swift */,
-				CDBFFB042BD597AF007B3F82 /* ContentView.swift */,
 				CDBFFB062BD597B0007B3F82 /* Assets.xcassets */,
-				CDBFFB0B2BD597B0007B3F82 /* Persistence.swift */,
-				CDBFFB0D2BD597B0007B3F82 /* HolyFly_Challenge.xcdatamodeld */,
 				CDBFFB082BD597B0007B3F82 /* Preview Content */,
 			);
 			path = HolyFly_Challenge;
@@ -125,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				CDBFFB182BD597B0007B3F82 /* HolyFly_ChallengeTests.swift */,
+				CD888DD72BDA3A57002AC44B /* NetworkServiceTests.swift */,
 			);
 			path = HolyFly_ChallengeTests;
 			sourceTree = "<group>";
@@ -141,6 +161,7 @@
 		CDBFFB312BD5E8C2007B3F82 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				CD888DD42BDA357D002AC44B /* Store */,
 				CDBFFB362BD5EE63007B3F82 /* Scenes */,
 				CDBFFB342BD5E8E0007B3F82 /* Common */,
 				CDBFFB332BD5E8D4007B3F82 /* Resources */,
@@ -152,6 +173,7 @@
 		CDBFFB322BD5E8C6007B3F82 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				CDBFFB542BD6EA3B007B3F82 /* NetworkService.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -159,6 +181,7 @@
 		CDBFFB332BD5E8D4007B3F82 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CD888DD92BDAEC46002AC44B /* Constants.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -166,6 +189,8 @@
 		CDBFFB342BD5E8E0007B3F82 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CD888DDB2BDAEF85002AC44B /* Components */,
+				CDD01D992BDA1746001794F7 /* ImgView */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -173,6 +198,7 @@
 		CDBFFB362BD5EE63007B3F82 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CDBFFB022BD597AF007B3F82 /* HolyFly_ChallengeApp.swift */,
 				CDBFFB372BD5EE97007B3F82 /* LaunchView */,
 				CDBFFB382BD62F0C007B3F82 /* Pokemon */,
 				CDBFFB392BD62F29007B3F82 /* Detail */,
@@ -190,8 +216,9 @@
 		CDBFFB382BD62F0C007B3F82 /* Pokemon */ = {
 			isa = PBXGroup;
 			children = (
-				CDBFFB3A2BD62F40007B3F82 /* PokemonView.swift */,
-				CDBFFB3C2BD62F48007B3F82 /* PokemonViewCell.swift */,
+				CDBFFB412BD6D5BA007B3F82 /* ViewModel */,
+				CDBFFB3F2BD6D5B2007B3F82 /* Model */,
+				CDBFFB3E2BD6D5A4007B3F82 /* View */,
 			);
 			path = Pokemon;
 			sourceTree = "<group>";
@@ -199,8 +226,50 @@
 		CDBFFB392BD62F29007B3F82 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				CDD01D9C2BDA186A001794F7 /* View */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		CDBFFB3E2BD6D5A4007B3F82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CDBFFB3A2BD62F40007B3F82 /* PokemonView.swift */,
+				CDBFFB3C2BD62F48007B3F82 /* PokemonViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CDBFFB3F2BD6D5B2007B3F82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CDBFFB422BD6D5D2007B3F82 /* PokemonModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CDBFFB412BD6D5BA007B3F82 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CD48735F2BD9D04D00A9955E /* PokemonViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CDD01D992BDA1746001794F7 /* ImgView */ = {
+			isa = PBXGroup;
+			children = (
+				CD4873612BD9DF8D00A9955E /* PokemonImgView.swift */,
+			);
+			path = ImgView;
+			sourceTree = "<group>";
+		};
+		CDD01D9C2BDA186A001794F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CDD01D9A2BDA177D001794F7 /* DetailView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,9 +279,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDBFFB282BD597B0007B3F82 /* Build configuration list for PBXNativeTarget "HolyFly_Challenge" */;
 			buildPhases = (
+				5B9FD648793AF97A70C5F2DC /* [CP] Check Pods Manifest.lock */,
 				CDBFFAFB2BD597AF007B3F82 /* Sources */,
 				CDBFFAFC2BD597AF007B3F82 /* Frameworks */,
 				CDBFFAFD2BD597AF007B3F82 /* Resources */,
+				486BF7A17F586ABF71F679DB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,6 +298,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDBFFB2B2BD597B0007B3F82 /* Build configuration list for PBXNativeTarget "HolyFly_ChallengeTests" */;
 			buildPhases = (
+				6EF9DB0AF28329CE00175EE6 /* [CP] Check Pods Manifest.lock */,
 				CDBFFB102BD597B0007B3F82 /* Sources */,
 				CDBFFB112BD597B0007B3F82 /* Frameworks */,
 				CDBFFB122BD597B0007B3F82 /* Resources */,
@@ -245,9 +317,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDBFFB2E2BD597B0007B3F82 /* Build configuration list for PBXNativeTarget "HolyFly_ChallengeUITests" */;
 			buildPhases = (
+				CA57DF98C1C28E1B56D0A110 /* [CP] Check Pods Manifest.lock */,
 				CDBFFB1A2BD597B0007B3F82 /* Sources */,
 				CDBFFB1B2BD597B0007B3F82 /* Frameworks */,
 				CDBFFB1C2BD597B0007B3F82 /* Resources */,
+				A5D6E7EFDEE9CE4AE4CD71CF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -291,7 +365,7 @@
 				Base,
 			);
 			mainGroup = CDBFFAF62BD597AF007B3F82;
-			productRefGroup = CDBFFB002BD597AF007B3F82 /* Products */;
+			productRefGroup = CDBFFAF62BD597AF007B3F82;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -328,17 +402,119 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		486BF7A17F586ABF71F679DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+			showEnvVarsInLog = 0;
+		};
+		5B9FD648793AF97A70C5F2DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+			showEnvVarsInLog = 0;
+		};
+		6EF9DB0AF28329CE00175EE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+			showEnvVarsInLog = 0;
+		};
+		A5D6E7EFDEE9CE4AE4CD71CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+			showEnvVarsInLog = 0;
+		};
+		CA57DF98C1C28E1B56D0A110 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CDBFFAFB2BD597AF007B3F82 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD888DDF2BDAEFC4002AC44B /* SubTitleViewComponent.swift in Sources */,
 				CDBFFB0C2BD597B0007B3F82 /* Persistence.swift in Sources */,
-				CDBFFB052BD597AF007B3F82 /* ContentView.swift in Sources */,
+				CD4873622BD9DF8D00A9955E /* PokemonImgView.swift in Sources */,
 				CDBFFB032BD597AF007B3F82 /* HolyFly_ChallengeApp.swift in Sources */,
+				CD888DD62BDA3596002AC44B /* FileManager.swift in Sources */,
 				CDBFFB3B2BD62F40007B3F82 /* PokemonView.swift in Sources */,
+				CDD01D9B2BDA177D001794F7 /* DetailView.swift in Sources */,
+				CDBFFB432BD6D5D2007B3F82 /* PokemonModel.swift in Sources */,
+				CD4873602BD9D04D00A9955E /* PokemonViewModel.swift in Sources */,
 				CDBFFB0F2BD597B0007B3F82 /* HolyFly_Challenge.xcdatamodeld in Sources */,
+				CDBFFB552BD6EA3B007B3F82 /* NetworkService.swift in Sources */,
 				CDBFFB3D2BD62F48007B3F82 /* PokemonViewCell.swift in Sources */,
+				CD888DDA2BDAEC46002AC44B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +522,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD888DD82BDA3A57002AC44B /* NetworkServiceTests.swift in Sources */,
 				CDBFFB192BD597B0007B3F82 /* HolyFly_ChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +686,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -537,6 +715,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -553,7 +732,6 @@
 		CDBFFB2C2BD597B0007B3F82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -572,7 +750,6 @@
 		CDBFFB2D2BD597B0007B3F82 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -591,7 +768,6 @@
 		CDBFFB2F2BD597B0007B3F82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -608,7 +784,6 @@
 		CDBFFB302BD597B0007B3F82 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

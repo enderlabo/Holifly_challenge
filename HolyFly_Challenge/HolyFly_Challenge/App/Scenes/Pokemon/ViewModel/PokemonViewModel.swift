@@ -6,10 +6,11 @@
 //
 
 import Foundation
+import UIKit
 
 @MainActor
 final class PokemonViewModel: ObservableObject {
-    @Published private var searchText = ""
+    @Published private var searchText = Constants.emptyString
     private let networkService = NetworkService()
     private var pokemonIndex: PokemonIndex?
     @Published private(set) var pokemonList: [PokemonModel] = []
@@ -40,12 +41,21 @@ final class PokemonViewModel: ObservableObject {
     }
     
     func loadPokemons(firstCall: Bool = false) async {
+       
         do {
+            if let cachedData = loadDataFromDisk(fileName: "pokemonList") {
+                pokemonList = try! JSONDecoder().decode([PokemonModel].self, from: cachedData)
+                sortPokemons(by: lastOrderingMode)
+                
+                return
+            }
+            
             pokemonIndex = try await getData(
-                by: firstCall ? URL(string: "https://pokeapi.co/api/v2/pokemon/")! : self.pokemonIndex?.next
+                by: firstCall ? URL(string: Constants.baseURL)! : self.pokemonIndex?.next
             )
             pokemonList.append(
                 contentsOf: try await getPokemons())
+            saveDataToDisk(try! JSONEncoder().encode(pokemonList), fileName: "pokemonList")
             
             sortPokemons(by: lastOrderingMode)
         } catch {
@@ -64,9 +74,32 @@ final class PokemonViewModel: ObservableObject {
     
     func filterPokemons(by text: String) {
         pokemonFiltered = pokemonList.filter{ pokemon in
-            return pokemon.name.localizedCaseInsensitiveContains(text) || pokemon.types.contains{ $0.type.name.localizedCaseInsensitiveContains(text) }
+            return pokemon.name.localizedCaseInsensitiveContains(text) || 
+            pokemon.types.contains{ 
+                $0.type.name.localizedCaseInsensitiveContains(text) }  ||
+            pokemon.abilities.contains{
+                $0.ability.name.localizedCaseInsensitiveContains(text)
+            }
         }
         
+    }
+    
+    func backgroundColor(forType type:String) -> UIColor {
+        switch type {
+        case Constants.typeGrass: return .systemGreen
+        case Constants.typeFire: return .systemRed
+        case Constants.typeWater: return .systemBlue
+        case Constants.typeElectric: return .systemYellow
+        case Constants.typePhysic: return .systemPurple
+        case Constants.typeNormal: return .systemOrange
+        case Constants.typeGround: return .systemGray
+        case Constants.typeFlying: return .systemCyan
+        case Constants.typeFairy: return .systemTeal
+        case Constants.typeFighting: return .systemGray2
+        case Constants.typeRock: return .systemBrown
+        
+        default  :  return .systemIndigo
+        }
     }
     
 }
