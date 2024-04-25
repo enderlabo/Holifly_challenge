@@ -27,35 +27,40 @@ struct PokemonView: View {
                     LazyVGrid(columns: colums, spacing: 15) {
                         ForEach(filteredPokemonList,  id: \.self) { item in
                             NavigationLink{
-                                //MARK: Missing DetailView
+                                DetailView(detailData: item)
                             } label: {
                                 PokemonViewCell(pokemonData: item)
+                            }.task {
+                                if item == viewModel.pokemonList.last {
+                                    await viewModel.loadPokemons()
+                                }
                             }
+                            
                         }
+                        
                     }
                     .searchable(text: $searchField, placement: .toolbar, prompt: "Search a Pokémon")
                     .navigationTitle("Pokédex")
+                    .task {
+                        await viewModel.loadPokemons(firstCall: true)
+                    }
                     .onChange(of: searchField ) { oldValue, NewValue in
                         viewModel.filterPokemons(by: NewValue)
-                    
+                        
                     }
-                    
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .padding(.all, 10)
                 
             }
-            .task {
-                await viewModel.loadPokemons(firstCall: true)
-            }
+            
         }
     }
     
-}
-
-struct PokemonView_Previews: PreviewProvider {
-    static var previews: some View {
-        PokemonView()
-            .environmentObject(PokemonViewModel())
+    struct PokemonView_Previews: PreviewProvider {
+        static var previews: some View {
+            PokemonView()
+                .environmentObject(PokemonViewModel())
+        }
     }
 }
