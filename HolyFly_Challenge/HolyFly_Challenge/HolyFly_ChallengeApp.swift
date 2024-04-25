@@ -10,11 +10,13 @@ import SwiftUI
 @main
 struct HolyFly_ChallengeApp: App {
     let persistenceController = PersistenceController.shared
+    @StateObject private var viewModel = PokemonViewModel()
 
     var body: some Scene {
         WindowGroup {
             PokemonView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(viewModel)
         }
     }
 }
