@@ -13,6 +13,7 @@
 		CD888DD82BDA3A57002AC44B /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD888DD72BDA3A57002AC44B /* NetworkServiceTests.swift */; };
 		CD888DDA2BDAEC46002AC44B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD888DD92BDAEC46002AC44B /* Constants.swift */; };
 		CD888DDF2BDAEFC4002AC44B /* SubTitleViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD888DDE2BDAEFC4002AC44B /* SubTitleViewComponent.swift */; };
+		CD888DE12BDAFDAA002AC44B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD888DE02BDAFDAA002AC44B /* Launch Screen.storyboard */; };
 		CDBFFB032BD597AF007B3F82 /* HolyFly_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFFB022BD597AF007B3F82 /* HolyFly_ChallengeApp.swift */; };
 		CDBFFB072BD597B0007B3F82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDBFFB062BD597B0007B3F82 /* Assets.xcassets */; };
 		CDBFFB0A2BD597B0007B3F82 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDBFFB092BD597B0007B3F82 /* Preview Assets.xcassets */; };
@@ -52,7 +53,8 @@
 		CD888DD72BDA3A57002AC44B /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
 		CD888DD92BDAEC46002AC44B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CD888DDE2BDAEFC4002AC44B /* SubTitleViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleViewComponent.swift; sourceTree = "<group>"; };
-		CDBFFAFF2BD597AF007B3F82 /* HolyFly_Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = HolyFly_Challenge.app; path = "/Users/laborit/Developer/Holifly_challenge/HolyFly_Challenge/build/Debug-iphoneos/HolyFly_Challenge.app"; sourceTree = "<absolute>"; };
+		CD888DE02BDAFDAA002AC44B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		CD888DE22BDAFE7C002AC44B /* HolyFly_Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HolyFly_Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDBFFB022BD597AF007B3F82 /* HolyFly_ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolyFly_ChallengeApp.swift; sourceTree = "<group>"; };
 		CDBFFB062BD597B0007B3F82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDBFFB092BD597B0007B3F82 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				CDBFFB012BD597AF007B3F82 /* HolyFly_Challenge */,
 				CDBFFB172BD597B0007B3F82 /* HolyFly_ChallengeTests */,
 				CDBFFB212BD597B0007B3F82 /* HolyFly_ChallengeUITests */,
+				CD888DE22BDAFE7C002AC44B /* HolyFly_Challenge.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -209,6 +212,7 @@
 		CDBFFB372BD5EE97007B3F82 /* LaunchView */ = {
 			isa = PBXGroup;
 			children = (
+				CD888DE02BDAFDAA002AC44B /* Launch Screen.storyboard */,
 			);
 			path = LaunchView;
 			sourceTree = "<group>";
@@ -291,7 +295,7 @@
 			);
 			name = HolyFly_Challenge;
 			productName = HolyFly_Challenge;
-			productReference = CDBFFAFF2BD597AF007B3F82 /* HolyFly_Challenge.app */;
+			productReference = CD888DE22BDAFE7C002AC44B /* HolyFly_Challenge.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CDBFFB132BD597B0007B3F82 /* HolyFly_ChallengeTests */ = {
@@ -381,6 +385,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD888DE12BDAFDAA002AC44B /* Launch Screen.storyboard in Resources */,
 				CDBFFB0A2BD597B0007B3F82 /* Preview Assets.xcassets in Resources */,
 				CDBFFB072BD597B0007B3F82 /* Assets.xcassets in Resources */,
 			);
@@ -684,6 +689,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -713,6 +719,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
