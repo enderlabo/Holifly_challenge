@@ -12,7 +12,7 @@ struct PokemonView: View {
     @State private var searchField: String = Constants.emptyString
     private let colums = [GridItem(.flexible()), GridItem(.flexible())]
     
-    var filteredPokemonList: [PokemonModel] {
+    var filteredPokemonList: [Pokemon] {
         if searchField.isEmpty {
             return viewModel.pokemonList
         } else {
@@ -32,6 +32,7 @@ struct PokemonView: View {
                                 PokemonViewCell(pokemonData: item, viewModel: viewModel)
                             }.task {
                                 if item == viewModel.pokemonList.last {
+                                    print("Pagination")
                                     await viewModel.loadPokemons()
                                 }
                             }

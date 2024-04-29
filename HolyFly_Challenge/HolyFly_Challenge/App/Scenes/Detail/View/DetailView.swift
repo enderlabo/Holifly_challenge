@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DetailView: View {
     
-    let detailData: PokemonModel
+    let detailData: Pokemon
     
     var body: some View {
         List {

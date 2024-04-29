@@ -13,15 +13,15 @@ final class PokemonViewModel: ObservableObject {
     @Published private var searchText = Constants.emptyString
     private let networkService = NetworkService()
     private var pokemonIndex: PokemonIndex?
-    @Published private(set) var pokemonList: [PokemonModel] = []
-    @Published private(set) var pokemonFiltered: [PokemonModel] = []
+    @Published private(set) var pokemonList: [Pokemon] = []
+    @Published private(set) var pokemonFiltered: [Pokemon] = []
     private var lastOrderingMode: OrderMode = .standard
     
     
-    private func getPokemons() async throws -> [PokemonModel] {
-        return try await withThrowingTaskGroup(of: PokemonModel.self) { group in
+    private func getPokemons() async throws -> [Pokemon] {
+        return try await withThrowingTaskGroup(of: Pokemon.self) { group in
             
-            var results: [PokemonModel] = []
+            var results: [Pokemon] = []
             
             guard let pokemonIndex = pokemonIndex else {
                 throw Error.missingPokemonIndex
@@ -44,10 +44,8 @@ final class PokemonViewModel: ObservableObject {
        
         do {
             if let cachedData = loadDataFromDisk(fileName: "pokemonList") {
-                pokemonList = try! JSONDecoder().decode([PokemonModel].self, from: cachedData)
+                pokemonList = try! JSONDecoder().decode([Pokemon].self, from: cachedData)
                 sortPokemons(by: lastOrderingMode)
-                
-                return
             }
             
             pokemonIndex = try await getData(

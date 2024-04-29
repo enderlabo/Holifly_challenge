@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct PokemonViewCell: View {
-    let pokemonData: PokemonModel
+    let pokemonData: Pokemon
     @ObservedObject var viewModel = PokemonViewModel()
     @State private var typeName: String = Constants.emptyString
     
-    init(pokemonData: PokemonModel, viewModel: PokemonViewModel) {
+    init(pokemonData: Pokemon, viewModel: PokemonViewModel) {
         self.pokemonData = pokemonData
         self.viewModel = viewModel
     }

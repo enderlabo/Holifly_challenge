@@ -122,12 +122,12 @@ struct Abilities:  Identifiable, Codable, Hashable {
     
 }
 
-struct PokemonIndex: Codable, Hashable {
-    var count: Int
-    var next: URL?
-    var previous: URL?
-    var results: [PokemonAnchor]
-}
+//struct PokemonIndex: Codable, Hashable {
+//    var count: Int
+//    var next: URL?
+//    var previous: URL?
+//    var results: [PokemonAnchor]
+//}
 
 struct PokemonAnchor: Codable, Hashable {
     var name: String

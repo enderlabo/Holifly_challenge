@@ -14,6 +14,15 @@
 		CD888DDA2BDAEC46002AC44B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD888DD92BDAEC46002AC44B /* Constants.swift */; };
 		CD888DDF2BDAEFC4002AC44B /* SubTitleViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD888DDE2BDAEFC4002AC44B /* SubTitleViewComponent.swift */; };
 		CD888DE12BDAFDAA002AC44B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD888DE02BDAFDAA002AC44B /* Launch Screen.storyboard */; };
+		CDA4581D2BE00D67005949CD /* PokemonsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA4581C2BE00D67005949CD /* PokemonsModel.swift */; };
+		CDA4581F2BE00D94005949CD /* PokemonAbilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA4581E2BE00D94005949CD /* PokemonAbilities.swift */; };
+		CDA458212BE00DAF005949CD /* PokemonMoves.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA458202BE00DAF005949CD /* PokemonMoves.swift */; };
+		CDA458232BE00DC8005949CD /* PokemonSpecies.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA458222BE00DC8005949CD /* PokemonSpecies.swift */; };
+		CDA458252BE00E34005949CD /* PokemonSprites.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA458242BE00E34005949CD /* PokemonSprites.swift */; };
+		CDA458272BE00E50005949CD /* PokemonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA458262BE00E50005949CD /* PokemonTypes.swift */; };
+		CDA458292BE00E64005949CD /* PokemonEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA458282BE00E64005949CD /* PokemonEquatable.swift */; };
+		CDA4582B2BE00E80005949CD /* PokemonIndexAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA4582A2BE00E80005949CD /* PokemonIndexAnchor.swift */; };
+		CDA4582D2BE00E90005949CD /* PokemonIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA4582C2BE00E90005949CD /* PokemonIndex.swift */; };
 		CDBFFB032BD597AF007B3F82 /* HolyFly_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFFB022BD597AF007B3F82 /* HolyFly_ChallengeApp.swift */; };
 		CDBFFB072BD597B0007B3F82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDBFFB062BD597B0007B3F82 /* Assets.xcassets */; };
 		CDBFFB0A2BD597B0007B3F82 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDBFFB092BD597B0007B3F82 /* Preview Assets.xcassets */; };
@@ -24,7 +33,6 @@
 		CDBFFB252BD597B0007B3F82 /* HolyFly_ChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFFB242BD597B0007B3F82 /* HolyFly_ChallengeUITestsLaunchTests.swift */; };
 		CDBFFB3B2BD62F40007B3F82 /* PokemonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFFB3A2BD62F40007B3F82 /* PokemonView.swift */; };
 		CDBFFB3D2BD62F48007B3F82 /* PokemonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFFB3C2BD62F48007B3F82 /* PokemonViewCell.swift */; };
-		CDBFFB432BD6D5D2007B3F82 /* PokemonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFFB422BD6D5D2007B3F82 /* PokemonModel.swift */; };
 		CDBFFB552BD6EA3B007B3F82 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFFB542BD6EA3B007B3F82 /* NetworkService.swift */; };
 		CDD01D9B2BDA177D001794F7 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD01D9A2BDA177D001794F7 /* DetailView.swift */; };
 /* End PBXBuildFile section */
@@ -55,19 +63,27 @@
 		CD888DDE2BDAEFC4002AC44B /* SubTitleViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleViewComponent.swift; sourceTree = "<group>"; };
 		CD888DE02BDAFDAA002AC44B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		CD888DE22BDAFE7C002AC44B /* HolyFly_Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HolyFly_Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDA458182BE00892005949CD /* HolyFly_ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HolyFly_ChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDA458192BE00892005949CD /* HolyFly_ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HolyFly_ChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDA4581C2BE00D67005949CD /* PokemonsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonsModel.swift; sourceTree = "<group>"; };
+		CDA4581E2BE00D94005949CD /* PokemonAbilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonAbilities.swift; sourceTree = "<group>"; };
+		CDA458202BE00DAF005949CD /* PokemonMoves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonMoves.swift; sourceTree = "<group>"; };
+		CDA458222BE00DC8005949CD /* PokemonSpecies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonSpecies.swift; sourceTree = "<group>"; };
+		CDA458242BE00E34005949CD /* PokemonSprites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonSprites.swift; sourceTree = "<group>"; };
+		CDA458262BE00E50005949CD /* PokemonTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTypes.swift; sourceTree = "<group>"; };
+		CDA458282BE00E64005949CD /* PokemonEquatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonEquatable.swift; sourceTree = "<group>"; };
+		CDA4582A2BE00E80005949CD /* PokemonIndexAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonIndexAnchor.swift; sourceTree = "<group>"; };
+		CDA4582C2BE00E90005949CD /* PokemonIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonIndex.swift; sourceTree = "<group>"; };
 		CDBFFB022BD597AF007B3F82 /* HolyFly_ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolyFly_ChallengeApp.swift; sourceTree = "<group>"; };
 		CDBFFB062BD597B0007B3F82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDBFFB092BD597B0007B3F82 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CDBFFB0B2BD597B0007B3F82 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		CDBFFB0E2BD597B0007B3F82 /* HolyFly_Challenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HolyFly_Challenge.xcdatamodel; sourceTree = "<group>"; };
-		CDBFFB142BD597B0007B3F82 /* HolyFly_ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = HolyFly_ChallengeTests.xctest; path = "/Users/laborit/Developer/Holifly_challenge/HolyFly_Challenge/build/Debug-iphoneos/HolyFly_Challenge.app/PlugIns/HolyFly_ChallengeTests.xctest"; sourceTree = "<absolute>"; };
 		CDBFFB182BD597B0007B3F82 /* HolyFly_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolyFly_ChallengeTests.swift; sourceTree = "<group>"; };
-		CDBFFB1E2BD597B0007B3F82 /* HolyFly_ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = HolyFly_ChallengeUITests.xctest; path = "/Users/laborit/Developer/Holifly_challenge/HolyFly_Challenge/build/Debug-iphoneos/HolyFly_ChallengeUITests-Runner.app/PlugIns/HolyFly_ChallengeUITests.xctest"; sourceTree = "<absolute>"; };
 		CDBFFB222BD597B0007B3F82 /* HolyFly_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolyFly_ChallengeUITests.swift; sourceTree = "<group>"; };
 		CDBFFB242BD597B0007B3F82 /* HolyFly_ChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolyFly_ChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CDBFFB3A2BD62F40007B3F82 /* PokemonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonView.swift; sourceTree = "<group>"; };
 		CDBFFB3C2BD62F48007B3F82 /* PokemonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewCell.swift; sourceTree = "<group>"; };
-		CDBFFB422BD6D5D2007B3F82 /* PokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModel.swift; sourceTree = "<group>"; };
 		CDBFFB542BD6EA3B007B3F82 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		CDD01D9A2BDA177D001794F7 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +138,8 @@
 				CDBFFB172BD597B0007B3F82 /* HolyFly_ChallengeTests */,
 				CDBFFB212BD597B0007B3F82 /* HolyFly_ChallengeUITests */,
 				CD888DE22BDAFE7C002AC44B /* HolyFly_Challenge.app */,
+				CDA458182BE00892005949CD /* HolyFly_ChallengeTests.xctest */,
+				CDA458192BE00892005949CD /* HolyFly_ChallengeUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -247,7 +265,15 @@
 		CDBFFB3F2BD6D5B2007B3F82 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CDBFFB422BD6D5D2007B3F82 /* PokemonModel.swift */,
+				CDA4581C2BE00D67005949CD /* PokemonsModel.swift */,
+				CDA4581E2BE00D94005949CD /* PokemonAbilities.swift */,
+				CDA458202BE00DAF005949CD /* PokemonMoves.swift */,
+				CDA458222BE00DC8005949CD /* PokemonSpecies.swift */,
+				CDA458242BE00E34005949CD /* PokemonSprites.swift */,
+				CDA458262BE00E50005949CD /* PokemonTypes.swift */,
+				CDA458282BE00E64005949CD /* PokemonEquatable.swift */,
+				CDA4582A2BE00E80005949CD /* PokemonIndexAnchor.swift */,
+				CDA4582C2BE00E90005949CD /* PokemonIndex.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -314,7 +340,7 @@
 			);
 			name = HolyFly_ChallengeTests;
 			productName = HolyFly_ChallengeTests;
-			productReference = CDBFFB142BD597B0007B3F82 /* HolyFly_ChallengeTests.xctest */;
+			productReference = CDA458182BE00892005949CD /* HolyFly_ChallengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		CDBFFB1D2BD597B0007B3F82 /* HolyFly_ChallengeUITests */ = {
@@ -334,7 +360,7 @@
 			);
 			name = HolyFly_ChallengeUITests;
 			productName = HolyFly_ChallengeUITests;
-			productReference = CDBFFB1E2BD597B0007B3F82 /* HolyFly_ChallengeUITests.xctest */;
+			productReference = CDA458192BE00892005949CD /* HolyFly_ChallengeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -507,18 +533,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDA458212BE00DAF005949CD /* PokemonMoves.swift in Sources */,
 				CD888DDF2BDAEFC4002AC44B /* SubTitleViewComponent.swift in Sources */,
+				CDA4582D2BE00E90005949CD /* PokemonIndex.swift in Sources */,
+				CDA4581D2BE00D67005949CD /* PokemonsModel.swift in Sources */,
+				CDA458232BE00DC8005949CD /* PokemonSpecies.swift in Sources */,
+				CDA4581F2BE00D94005949CD /* PokemonAbilities.swift in Sources */,
 				CDBFFB0C2BD597B0007B3F82 /* Persistence.swift in Sources */,
 				CD4873622BD9DF8D00A9955E /* PokemonImgView.swift in Sources */,
 				CDBFFB032BD597AF007B3F82 /* HolyFly_ChallengeApp.swift in Sources */,
+				CDA458252BE00E34005949CD /* PokemonSprites.swift in Sources */,
 				CD888DD62BDA3596002AC44B /* FileManager.swift in Sources */,
 				CDBFFB3B2BD62F40007B3F82 /* PokemonView.swift in Sources */,
 				CDD01D9B2BDA177D001794F7 /* DetailView.swift in Sources */,
-				CDBFFB432BD6D5D2007B3F82 /* PokemonModel.swift in Sources */,
+				CDA458272BE00E50005949CD /* PokemonTypes.swift in Sources */,
 				CD4873602BD9D04D00A9955E /* PokemonViewModel.swift in Sources */,
 				CDBFFB0F2BD597B0007B3F82 /* HolyFly_Challenge.xcdatamodeld in Sources */,
 				CDBFFB552BD6EA3B007B3F82 /* NetworkService.swift in Sources */,
+				CDA4582B2BE00E80005949CD /* PokemonIndexAnchor.swift in Sources */,
 				CDBFFB3D2BD62F48007B3F82 /* PokemonViewCell.swift in Sources */,
+				CDA458292BE00E64005949CD /* PokemonEquatable.swift in Sources */,
 				CD888DDA2BDAEC46002AC44B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
